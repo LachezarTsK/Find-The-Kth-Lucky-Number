@@ -14,7 +14,7 @@ func kthLuckyNumber(k int) string {
 	var kthLuckyNumber = make([]byte, length)
 
 	for i := length - 1; i >= 0; i-- {
-		kthLuckyNumber[i] = LUCKY_DIGITS[oneBasedIndexing&1]
+		kthLuckyNumber[i] = LUCKY_DIGITS[oneBasedIndexing & 1]
 		oneBasedIndexing = oneBasedIndexing >> 1
 	}
 
